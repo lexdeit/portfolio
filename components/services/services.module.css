@@ -41,9 +41,10 @@
 
 .contenedor {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 0fr);
     grid-gap: 2em;
-    padding: 0em 25em 0em 25em;
+    align-items: center;
+    justify-content: center;
 }
 
 
@@ -71,13 +72,13 @@
 
 .card {
     backdrop-filter: blur(8px) saturate(100%);
-    padding: 1em 2em 2em 2em;
     border: 1px solid rgba(242, 242, 242, 0.4);
-    backdrop-filter: blur(6px);
     border-radius: 17px;
     transition: all 0.5s;
     align-items: center;
     justify-content: center;
+    width: 20em;
+    height: relative;
 }
 
 .card:hover {
