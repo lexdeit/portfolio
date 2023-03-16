@@ -1,57 +1,87 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
 
 .contenedor {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-image: url('../../public/backgroundwallpaper.webp'); */
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    background-position: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: multiply; 
+  display: flex;
+  gap: 5em;
+  align-items: center;
+  justify-content: center;
+  /* background-image: url('../../public/backgroundwallpaper.webp'); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;
+}
+
+.box,
+.box1 {
+  position: absolute;
+  animation: float 3s ease-in-out infinite;
+}
+
+.subcontenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 50px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
 }
 
 .iframer {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    transform: scale(1.3);
-    z-index: -10;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.3);
+  z-index: -10;
 }
 
 
 
 .titulo {
-    font-family: Poppins;
-    font-weight: 500;
-    color: white;
+  font-family: Poppins;
+  font-weight: 500;
+  color: white;
+  text-align: center;
 }
 
 .texto {
-    font-family: Poppins;
-    font-weight: 400;
-    color: white;
+  font-family: Poppins;
+  font-weight: 400;
+  color: white;
+  text-align: center;
 }
 
 .imagen {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
 }
 
 .card {
-    backdrop-filter: blur(8px) saturate(100%);
-    border-radius: 5%;
-    border: 1px solid rgba(242, 242, 242, 0.4);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 3em 1.4em 3em 1.4em;
-    gap: 1.5em;
-    z-index: 3;
+  backdrop-filter: blur(8px) saturate(100%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 5%;
+  border: 1px solid rgba(242, 242, 242, 0.4);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3em 1.4em 3em 1.4em;
+  gap: 1.5em;
+  z-index: 3;
 }
-

@@ -72,6 +72,7 @@
 
 .card {
     backdrop-filter: blur(8px) saturate(100%);
+    background-color: rgba(0, 0, 0, 0.5);
     border: 1px solid rgba(242, 242, 242, 0.4);
     border-radius: 17px;
     transition: all 0.5s;
