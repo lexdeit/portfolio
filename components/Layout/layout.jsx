@@ -54,22 +54,30 @@ const Layout = ({ children, title, description }) => {
             {/* Menu de celular o tablet */}
             <nav className={styles.mobile}>
 
-                    <div className={styles.divcentrado}>
-                        <Image
-                            src="/logotransparent.webp"
-                            width={50}
-                            height={50}
-                            className={styles.logo}
-                        />
-                    </div>
+                <div className={styles.divcentrado}>
+                    <Image
+                        src="/logotransparent.webp"
+                        width={50}
+                        height={50}
+                        className={styles.logo}
+                    />
+                </div>
 
-                    <div className={styles.divcentrado}>
-                        <span className={styles.burger}></span>
-                    </div>
+                <div className={styles.divcentrado}>
+                    <span className={styles.burger}></span>
+                </div>
 
-                    <div className={styles.divcentrado}>
-                        <span className={styles.instagram}></span>
-                    </div>
+                <div className={styles.divcentrado}>
+                    <span className={styles.instagram}></span>
+                </div>
+
+
+                
+                    <div className={styles.animatedborderboxglow}></div>
+                    <div className={styles.animatedborderbox}></div>
+                
+
+
             </nav>
 
             <main>{children}</main>
