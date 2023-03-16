@@ -13,8 +13,9 @@ const About = () => {
                     <p className={styles.informacion}>
                         Soy un estudiante de ingeniería en de Desarrollo de Software y Redes
                         especializado en desarrollo full-stack, con experiencia en tecnologías como
-                        Next.js, React, MongoDB, Node.js y Redux.
-                        Además, tengo un nivel C1 avanzado en inglés, certificado por mi tiempo estudiando en Toronto, Canadá.
+                        Next.js, React, MongoDB, Node.js y Redux. <br /> <br />
+                        Además, cuento con un certificado nivel B2.1 que obtuve en EF en mi tiempo en Toronto, Canadá,
+                        sin embargo en mi ultimo examen obtuve un C1 Avanzado.
                         También he obtenido un certificado de principiante en alemán después de un curso intensivo en Berlín.
                     </p>
                     <br />
@@ -36,7 +37,7 @@ const About = () => {
                         <span className={styles.download}></span> Descargar </button>
                 </div>
                 <div className={styles.subcontendero}>
-                    <h1 className={styles.titulo}>Tecnologias <br className={styles.espacio}/> {"{LexdeIT Skills}"} </h1>
+                    <h1 className={styles.titulo}>Tecnologias <br className={styles.espacio} /> {"{LexdeIT Skills}"} </h1>
                     <br />
                     <br />
                     <div className={styles.iconos}>

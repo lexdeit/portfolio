@@ -70,14 +70,6 @@ const Layout = ({ children, title, description }) => {
                 <div className={styles.divcentrado}>
                     <span className={styles.instagram}></span>
                 </div>
-
-
-                
-                    <div className={styles.animatedborderboxglow}></div>
-                    <div className={styles.animatedborderbox}></div>
-                
-
-
             </nav>
 
             <main>{children}</main>

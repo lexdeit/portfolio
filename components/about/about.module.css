@@ -48,7 +48,7 @@
     display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .contenedor {
         display: flex;
         flex-direction: column;
