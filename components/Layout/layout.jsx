@@ -13,6 +13,8 @@ const Layout = ({ children, title, description }) => {
                 <meta name="description" content={description} />
             </Head>
 
+
+            {/* Menu de computadora */}
             <nav className={styles.nav}>
 
                 <Image
@@ -21,7 +23,6 @@ const Layout = ({ children, title, description }) => {
                     height={50}
                     className={styles.logo}
                 />
-                <span className={styles.burger}></span>
                 <div className={styles.botones}>
 
 
@@ -48,7 +49,27 @@ const Layout = ({ children, title, description }) => {
                     <span className={styles.linkedin} onClick={() => window.open('https://www.linkedin.com/in/lexdeit/')}></span>
                 </div>
 
+            </nav>
 
+            {/* Menu de celular o tablet */}
+            <nav className={styles.mobile}>
+
+                    <div className={styles.divcentrado}>
+                        <Image
+                            src="/logotransparent.webp"
+                            width={50}
+                            height={50}
+                            className={styles.logo}
+                        />
+                    </div>
+
+                    <div className={styles.divcentrado}>
+                        <span className={styles.burger}></span>
+                    </div>
+
+                    <div className={styles.divcentrado}>
+                        <span className={styles.instagram}></span>
+                    </div>
             </nav>
 
             <main>{children}</main>
