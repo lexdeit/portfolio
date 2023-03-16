@@ -88,6 +88,13 @@
 
 @media screen and (max-width: 1200px) {
 
+  .iframer {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    transform: scale(3);
+    z-index: -10;
+  }
 
   .card{
     position: relative;
