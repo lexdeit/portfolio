@@ -36,7 +36,7 @@ const About = () => {
                         <span className={styles.download}></span> Descargar </button>
                 </div>
                 <div className={styles.subcontendero}>
-                    <h1 className={styles.titulo}>Tecnologias | {"{LexdeIT Skills}"} </h1>
+                    <h1 className={styles.titulo}>Tecnologias <br className={styles.espacio}/> {"{LexdeIT Skills}"} </h1>
                     <br />
                     <br />
                     <div className={styles.iconos}>

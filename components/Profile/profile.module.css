@@ -85,3 +85,15 @@
   gap: 1.5em;
   z-index: 3;
 }
+
+@media screen and (max-width: 768px) {
+
+  .card{
+    transform: scale(0.8);
+  }
+
+  .box,
+  .box1 {
+    display: none;
+  }
+}
