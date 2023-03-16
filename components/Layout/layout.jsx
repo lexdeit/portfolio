@@ -19,8 +19,11 @@ const Layout = ({ children, title, description }) => {
                     src="/logotransparent.webp"
                     width={50}
                     height={50}
+                    className={styles.logo}
                 />
+                <span className={styles.burger}></span>
                 <div className={styles.botones}>
+
 
                     <Link href="/home">
                         <h1 className={styles.menuletras}>Home </h1>
