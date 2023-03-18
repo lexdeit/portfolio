@@ -54,7 +54,6 @@ const About = () => {
                     </div>
                 </div>
 
-
             </div>
         </>
     )

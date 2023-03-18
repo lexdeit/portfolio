@@ -3,7 +3,6 @@ import styles from "../services/services.module.css";
 const Services = () => {
     return (
         <>
-            <iframe className={styles.videofondo} src="https://www.youtube.com/embed/RR2EI8EEOOw&autoplay=1&loop=1&mute=1&showinfo=0&controls=0"></iframe>
 
             <div className={styles.principal}>
                 <br />
@@ -36,7 +35,19 @@ const Services = () => {
                                 Los sitios de alto rendimiento atraen y retienen a los usuarios
                             </p>
                         </div>
+                    <div className={styles.animatedborderboxglow}></div>
                     </div>
+
+                    {/* <div className={styles.animatedborderbox}>
+                        <span className={styles.rocket}></span>
+                        <br />
+                        <h3 className={styles.titulo}>Rendimiento</h3>
+                        <p className={styles.parrafo}>
+                            Retener a los usuarios es crucial para mejorar las conversiones.
+                            Los sitios de alto rendimiento atraen y retienen a los usuarios
+                        </p>
+
+                    </div> */}
 
 
                     <div className={styles.card}>

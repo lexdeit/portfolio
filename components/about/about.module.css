@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
 
 .contenedor {
-    background-color: rgb(255, 255, 255);
+    background-color:  #080411 ;
     font-family: Poppins;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -11,15 +11,16 @@
 
 
 .titulo {
-    color: rgb(0, 0, 0);
+    color: white;
     text-align: left;
-
+    font-size: 1.5em;
 }
 
 .informacion {
-    color: black;
+    color: white;
     text-align: left;
     font-weight: 500;
+    font-size: .8em;
 }
 
 .about {
@@ -66,7 +67,7 @@
         align-items: center;
         justify-content: center;
         padding: 0%;
-        margin: 0px 50px 0px 50px;
+        margin: 0em 5em 0em 5em;
     }
 
     .titulo,
@@ -76,6 +77,10 @@
 
     .espacio {
         display: inherit;
+    }
+
+    .boton{
+        transform: scale(0.6);
     }
 }
 
@@ -145,40 +150,15 @@
     align-items: center;
 }
 
-.boton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-family: inherit;
-    font-size: 13px;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 0.4px;
-    color: #303030;
-    background-color: rgb(249, 255, 137);
-    border-style: solid;
-    border-width: 2px 2px 2px 2px;
-    border-color: rgba(255, 255, 255, 0.333);
-    border-radius: 40px 40px 40px 40px;
-    padding: 16px 24px 16px 28px;
-    transform: translate(0px, 0px) rotate(0deg);
-    transition: 0.2s;
-    box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
-    width: 15em;
-    height: 5em;
+/* .boton {
+
 }
 
 .boton:hover {
-    color: #516d91;
-    background-color: rgb(231, 231, 0);
-    box-shadow: -2px -1px 8px 0px #ffffff, 12px 11px 18px 0px rgba(0, 0, 0, 0.2);
-    cursor: pointer;
 }
 
 .boton:active {
-    box-shadow: none;
-}
+} */
 
 .download {
     background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='utf-8'%3F%3E%3C!-- Uploaded to: SVG Repo  www.svgrepo.com  Generator: SVG Repo Mixer Tools --%3E%3Csvg width='40px' height='40px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M20 15V18C20 19.1046 19.1046 20 18 20H6C4.89543 20 4 19.1046 4 18L4 15M8 11L12 15M12 15L16 11M12 15V3' stroke='%23000000' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");

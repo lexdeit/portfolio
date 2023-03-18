@@ -74,7 +74,7 @@ const Layout = ({ children, title, description }) => {
 
             <main>{children}</main>
 
-            <footer className={styles.titulo}>
+            <footer className={styles.footer}>
                 © {now.getFullYear()} All right reserved | Made with ♥ by @lexteckg | Made with {"{Next | React}"}
             </footer>
         </>
