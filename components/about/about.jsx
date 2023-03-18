@@ -34,9 +34,9 @@ const About = () => {
                     <p className={styles.informacion}>Si eres un reclutador te dejo mi CV</p>
                     <br />
 
-                    <button data-text="Awesome" className={styles.button}>
+                    <button data-text="Awesome" className={styles.button} onClick={() => window.open('https://bit.ly/3LGBaE3')}>
                         <span className="actual-text">&nbsp;Curriculum&nbsp;</span>
-                        <span className={styles.hovertext} aria-hidden="true" onClick={() => window.open('https://bit.ly/3LGBaE3')}>&nbsp;Curriculum&nbsp;</span>
+                        <span className={styles.hovertext} aria-hidden="true">&nbsp;Curriculum&nbsp;</span>
                     </button>
 
                 </div>
