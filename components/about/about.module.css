@@ -160,18 +160,21 @@
     }
 
     .button {
-        transform: scale(1);
         align-items: center;
         justify-content: center;
         display: flex;
+        width: auto;
     }
 
     .hovertext {
-        margin-left: -3.2em;
+        width: 0vw;
+        box-sizing: border-box;
+        align-items: left;
+        justify-content: left;
     }
 
     .button:hover .hovertext {
-        width: 50vw;
+        width: 100%;
         filter: drop-shadow(0 0 23px var(--animation-color));
     }
 }
