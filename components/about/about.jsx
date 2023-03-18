@@ -33,8 +33,12 @@ const About = () => {
                     <br />
                     <p className={styles.informacion}>Si eres un reclutador te dejo mi CV</p>
                     <br />
-                    <button className={styles.boton} onClick={() => window.open('https://bit.ly/3LGBaE3')}>
-                        <span className={styles.download}></span> Descargar </button>
+
+                    <button data-text="Awesome" className={styles.button}>
+                        <span className="actual-text">&nbsp;Curriculum&nbsp;</span>
+                        <span className={styles.hovertext} aria-hidden="true" onClick={() => window.open('https://bit.ly/3LGBaE3')}>&nbsp;Curriculum&nbsp;</span>
+                    </button>
+
                 </div>
                 <div className={styles.subcontendero}>
                     <h1 className={styles.titulo}>Tecnologias <br className={styles.espacio} /> {"{LexdeIT Skills}"} </h1>
@@ -53,7 +57,6 @@ const About = () => {
                         <span className={styles.mongodb}></span>
                     </div>
                 </div>
-
             </div>
         </>
     )

@@ -5,22 +5,24 @@
     font-family: Poppins;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    width: 100vw;
-    height: 100vh;
-}
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+  }
+  
 
 
 .titulo {
     color: white;
     text-align: left;
-    font-size: 2.5em;
+    font-size: 2em;
 }
 
 .informacion {
     color: white;
     text-align: left;
     font-weight: 500;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .about {
@@ -28,15 +30,15 @@
     flex-direction: column;
     align-items: left;
     justify-content: center;
-    margin: 0em 10em 0em 5em;
+    margin: 3em;
 }
 
 .subcontendero {
     display: flex;
     flex-direction: column;
-    align-items: right;
+    align-items: center;
     justify-content: center;
-    margin: 0em 10em 0em 10em;
+    margin: 3em;
 
 }
 
@@ -88,11 +90,55 @@
     .espacio {
         display: inherit;
     }
-
-    .boton {
-        transform: scale(0.6);
-    }
 }
+
+/*---------------------------------------------------------------------------------------------------------------------------*/
+
+/* === removing default button style ===*/
+.button {
+    margin: 50;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #35d3ff;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: Poppins;
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+    width: 10vw;
+    cursor: pointer;
+  }
+  /* this is the text, when you hover on button */
+  .hovertext {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0vw;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hovertext {
+    width: 13vw;
+    /* width: 100%; */
+    filter: drop-shadow(0 0 23px var(--animation-color));
+  }
 
 /******************************************************************************************************************************/
 .germany {
@@ -155,7 +201,7 @@
 .iconos {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 1em;
+    grid-gap: 3em;
     justify-content: center;
     align-items: center;
 }
