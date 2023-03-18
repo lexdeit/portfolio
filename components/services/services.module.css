@@ -30,11 +30,10 @@
     display: flex;
     flex-direction: column;
     font-family: Poppins;
-    color: black;
     width: 100vw;
     min-height: 100vh; /* Usamos min-height para que el contenedor ocupe al menos toda la pantalla */
     background-position: center;
-    background-color: #08041167;
+    background-color: rgba(0, 0, 0, 0.5);
   }
   
   .contenedor {
@@ -70,7 +69,7 @@
   
   .card {
     backdrop-filter: blur(25px);
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.0);
     border: 0.1em solid rgba(242, 242, 242, 0.3);
     border-radius: 1.5em;
     transition: all 0.5s;

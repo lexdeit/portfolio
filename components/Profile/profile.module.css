@@ -11,8 +11,9 @@
   width: 100vw;
   height: 100vh;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   background-blend-mode: multiply;
+  backdrop-filter: blur(75px) saturate(180%);
 }
 
 .box,
