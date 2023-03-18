@@ -25,20 +25,19 @@ const Layout = ({ children, title, description }) => {
                 />
                 <div className={styles.botones}>
 
-
-                    <Link href="/home">
+                    <Link href="#">
                         <h1 className={styles.menuletras}>Home </h1>
                     </Link>
 
-                    <Link href="/about">
+                    <Link href="#about">
                         <h1 className={styles.menuletras}>About</h1>
                     </Link>
 
-                    <Link href="/services">
+                    <Link href="#services">
                         <h1 className={styles.menuletras}>Services</h1>
                     </Link>
 
-                    <Link href="/contact">
+                    <Link href="#contact">
                         <h1 className={styles.menuletras}>Contact</h1>
                     </Link>
                 </div>
