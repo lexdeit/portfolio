@@ -11,9 +11,9 @@ const About = () => {
                     <h1 className={styles.titulo}>Acerca de mi</h1>
                     <br />
                     <p className={styles.informacion}>
-                        Soy un estudiante de ingeniería en de Desarrollo de Software y Redes
-                        especializado en desarrollo full-stack, con experiencia en tecnologías como
-                        Next.js, React, MongoDB, Node.js y Redux. <br /> <br />
+                        Soy un estudiante de ingeniería en Desarrollo de Software y Redes
+                        especializado en desarrollo Full-Stack, con experiencia en tecnologías como
+                        Next, React, MongoDB, Node.js y Redux. <br /> <br />
                         Además, cuento con un certificado nivel B2.1 que obtuve en EF en mi tiempo en Toronto, Canadá,
                         sin embargo en mi ultimo examen obtuve un C1 Avanzado.
                         También he obtenido un certificado de principiante en alemán después de un curso intensivo en Berlín.
