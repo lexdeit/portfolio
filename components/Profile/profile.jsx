@@ -23,7 +23,7 @@ const Profile = () => {
               </div>
 
           <Image
-            src="/Graphic-Decentralized-Box-p-800.png"
+            src="/Graphic-Decentralized-Box-p-800.webp"
             width={800}
             height={509}
             alt="Prueba"
@@ -31,7 +31,7 @@ const Profile = () => {
           ></Image>
 
           <Image
-            src="/Graphic-Decentralized-Base-p-800.png"
+            src="/Graphic-Decentralized-Base-p-800.webp"
             width={800}
             height={509}
             alt="Prueba"
@@ -39,7 +39,7 @@ const Profile = () => {
           ></Image>
 
           <Image
-            src="/Graphic-Decentralized-Orbitals-p-800.png"
+            src="/Graphic-Decentralized-Orbitals-p-800.webp"
             width={800}
             height={509}
             alt="Prueba"
