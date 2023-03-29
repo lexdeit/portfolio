@@ -2,8 +2,10 @@ import Head from "next/head";
 import styles from "../Layout/layout.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
 
 const Layout = ({ children, title, description }) => {
+    const [showMenu, setShowMenu] = useState(false);
     const now = new Date();
 
     return (
@@ -59,22 +61,49 @@ const Layout = ({ children, title, description }) => {
                         width={50}
                         height={50}
                         className={styles.logo}
+                        onClick={() => window.open('https://www.facebook.com/lexsinver/')}
                     />
                 </div>
 
-                <div className={styles.divcentrado}>
-                    <span className={styles.burger}></span>
+                <div className={styles.divcentrado} onClick={() => setShowMenu(!showMenu)}>
+                    <span className={styles.burger} ></span>
                 </div>
 
                 <div className={styles.divcentrado}>
-                    <span className={styles.instagram}></span>
+                    <span className={styles.linkedin} onClick={() => window.open('https://www.linkedin.com/in/lexdeit/')}></span>
                 </div>
             </nav>
+
+            {/* Menu con iconos Mobile */}
+            {showMenu && <div className={styles.submenumobile}>
+                <Link href="#profile">
+                    <span className={styles.homemobile}></span>
+                    <h1 className={styles.menuletras}>Home </h1>
+                </Link>
+
+                <Link href="#about">
+                    <span className={styles.aboutmobile}></span>
+                    <h1 className={styles.menuletras}>About</h1>
+                </Link>
+
+                <Link href="#services">
+                    <span className={styles.servicesmobile}></span>
+                    <h1 className={styles.menuletras}>Services</h1>
+                </Link>
+
+                <Link href="#contact">
+                    <span className={styles.contactmobile}></span>
+
+                    <h1 className={styles.menuletras}>Contact</h1>
+                </Link>
+
+
+            </div>}
 
             <main>{children}</main>
 
             <footer className={styles.footer}>
-                © {now.getFullYear()} All right reserved | Made with ♥ by @lexteckg | Made with {"{Next | React}"}
+                © {now.getFullYear()} All right reserved | Made with ♥ by <a href="https://github.com/lexdeit"> @lexdeit</a> | Made with {"{Next | React}"}
             </footer>
         </>
     )
