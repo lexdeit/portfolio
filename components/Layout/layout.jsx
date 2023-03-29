@@ -90,8 +90,8 @@ const Layout = ({ children, title, description }) => {
                     <span className={styles.servicesmobile}></span>
                     <h1 className={styles.menuletras}>Services</h1>
                 </Link>
-
-                <Link href="#contact">
+                
+                <Link href="#contact" onClick={() => window.open('https://api.whatsapp.com/send?phone=4915776104366&text=%C2%A1Hola,%20Emmanuel!%20%C2%BFC%C3%B3mo%20est%C3%A1s?')}>
                     <span className={styles.contactmobile}></span>
 
                     <h1 className={styles.menuletras}>Contact</h1>
