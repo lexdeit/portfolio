@@ -70,7 +70,7 @@ const Layout = ({ children, title, description }) => {
                 </div>
 
                 <div className={styles.divcentrado}>
-                    <span className={styles.linkedin} onClick={() => window.open('https://www.linkedin.com/in/lexdeit/')}></span>
+                    <span className={styles.github} onClick={() => window.open('https://github.com/lexdeit')}></span>
                 </div>
             </nav>
 
