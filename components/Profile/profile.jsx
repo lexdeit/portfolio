@@ -1,12 +1,27 @@
 import Image from "next/image";
-import styles from "../Profile/profile.module.css"
+import styles from "../Profile/profile.module.css";
+import { useState, useEffect } from "react";
+
 
 const Profile = () => {
+  const [isScreenBig, setIsScreenBig] = useState(false);
+
+  const handleResize = () => {
+    setIsScreenBig(window.innerWidth >= 1200);
+  };
+  
+  useEffect(() => {
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+  
+
   return (
     <>
       <section id="profile">
 
-        <iframe className={styles.iframer} src="https://www.youtube.com/embed/RhlQvbvMg-0?&autoplay=1&loop=1&mute=1&showinfo=0&controls=0"></iframe>
+        {isScreenBig && <iframe className={styles.iframer} src="https://www.youtube.com/embed/RhlQvbvMg-0?&autoplay=1&loop=1&mute=1&showinfo=0&controls=0"></iframe>}
         <div className={styles.contenedor}>
 
           <div className={styles.subcontenedor}>
