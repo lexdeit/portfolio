@@ -4,23 +4,25 @@ import styles from "../Profile/profile.module.css"
 const Profile = () => {
   return (
     <>
-      <iframe className={styles.iframer} src="https://www.youtube.com/embed/RhlQvbvMg-0?&autoplay=1&loop=1&mute=1&showinfo=0&controls=0"></iframe>
-      <div className={styles.contenedor}>
+      <section id="profile">
 
-        <div className={styles.subcontenedor}>
-          <div className={styles.card}>
-            <Image
-              src="/profile.webp"
-              width={640}
-              height={677}
-              alt="Emmanuel Villavicencio"
-              className={styles.imagen}
+        <iframe className={styles.iframer} src="https://www.youtube.com/embed/RhlQvbvMg-0?&autoplay=1&loop=1&mute=1&showinfo=0&controls=0"></iframe>
+        <div className={styles.contenedor}>
+
+          <div className={styles.subcontenedor}>
+            <div className={styles.card}>
+              <Image
+                src="/profile.webp"
+                width={640}
+                height={677}
+                alt="Emmanuel Villavicencio"
+                className={styles.imagen}
               ></Image>
-            <h1 className={styles.titulo} >Emmanuel <br /> Villavicencio</h1>
-            <p className={styles.texto}>Programador Full Stack <br />
-              | Next | React | Redux | CSS | HTML | </p>
+              <h1 className={styles.titulo} >Emmanuel <br /> Villavicencio</h1>
+              <p className={styles.texto}>Programador Full Stack <br />
+                | Next | React | Redux | CSS | HTML | </p>
+            </div>
           </div>
-              </div>
 
           <Image
             src="/Graphic-Decentralized-Box-p-800.webp"
@@ -48,8 +50,9 @@ const Profile = () => {
 
 
 
-      </div>
+        </div>
 
+      </section>
     </>
   )
 }

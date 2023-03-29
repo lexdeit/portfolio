@@ -25,7 +25,7 @@ const Layout = ({ children, title, description }) => {
                 />
                 <div className={styles.botones}>
 
-                    <Link href="#">
+                    <Link href="#profile">
                         <h1 className={styles.menuletras}>Home </h1>
                     </Link>
 
