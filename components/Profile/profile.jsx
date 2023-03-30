@@ -9,13 +9,13 @@ const Profile = () => {
   const handleResize = () => {
     setIsScreenBig(window.innerWidth >= 1200);
   };
-  
+
   useEffect(() => {
     handleResize();
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
-  
+
 
   return (
     <>
@@ -32,6 +32,8 @@ const Profile = () => {
                 height={677}
                 alt="Emmanuel Villavicencio"
                 className={styles.imagen}
+                priority
+
               ></Image>
               <h1 className={styles.titulo} >Emmanuel <br /> Villavicencio</h1>
               <p className={styles.texto}>Programador Full Stack <br />
@@ -45,6 +47,7 @@ const Profile = () => {
             height={509}
             alt="Prueba"
             className={styles.box}
+            priority
           ></Image>
 
           <Image
@@ -53,6 +56,8 @@ const Profile = () => {
             height={509}
             alt="Prueba"
             className={styles.box1}
+            priority
+
           ></Image>
 
           <Image
@@ -61,6 +66,8 @@ const Profile = () => {
             height={509}
             alt="Prueba"
             className={styles.box1}
+            priority
+
           ></Image>
 
 

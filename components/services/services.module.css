@@ -14,12 +14,25 @@
 }
 
 .subtitulo {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 800;
+  font-size: 2em;
+}
+
+.titulo {
   font-family: Poppins;
   font-size: 1.5em;
   color: white;
   text-align: center;
 }
 
+.parrafo {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+  font-size: 1.2em;
+}
 
 
 .principal {
@@ -47,19 +60,6 @@
   /* Usamos vw para que el espacio de relleno sea relativo al ancho del contenedor */
 }
 
-.titulo {
-  text-align: center;
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 800;
-  font-size: 2em;
-}
-
-.parrafo {
-  text-align: center;
-  color: rgba(255, 255, 255, 0.8);
-  font-weight: 600;
-  font-size: 1.2em;
-}
 
 .subcontenedor {
   display: flex;
@@ -108,11 +108,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     gap: 2em;
-  }
-
-  .titulo,
-  .parrafo {
-    transform: scale(1);
   }
 
   .card {

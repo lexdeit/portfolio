@@ -23,6 +23,7 @@ const Layout = ({ children, title, description }) => {
                     src="/logotransparent.webp"
                     width={50}
                     height={50}
+                    alt="logo"
                     className={styles.logo}
                 />
                 <div className={styles.botones}>
@@ -60,6 +61,7 @@ const Layout = ({ children, title, description }) => {
                         src="/logotransparent.webp"
                         width={50}
                         height={50}
+                        alt="logo"
                         className={styles.logo}
                         onClick={() => window.open('https://www.facebook.com/lexsinver/')}
                     />
@@ -90,7 +92,7 @@ const Layout = ({ children, title, description }) => {
                     <span className={styles.servicesmobile}></span>
                     <h1 className={styles.menuletras}>Services</h1>
                 </Link>
-                
+
                 <Link href="#contact" onClick={() => window.open('https://api.whatsapp.com/send?phone=4915776104366&text=%C2%A1Hola,%20Emmanuel!%20%C2%BFC%C3%B3mo%20est%C3%A1s?')}>
                     <span className={styles.contactmobile}></span>
 
