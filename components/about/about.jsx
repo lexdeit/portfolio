@@ -47,16 +47,18 @@ const About = () => {
                         <br />
                         <br />
                         <div className={styles.iconos}>
-                            <span className={styles.css}></span>
+                            <span className={styles.javascript}></span>
                             <span className={styles.html}></span>
+                            <span className={styles.css}></span>
                             <span className={styles.git}></span>
                             <span className={styles.react}></span>
                             <span className={styles.redux}></span>
-                            <span className={styles.javascript}></span>
                             <span className={styles.nextjs}></span>
-                            <span className={styles.mysql}></span>
                             <span className={styles.nodejs}></span>
+                            <span className={styles.express}></span>
+                            <span className={styles.mysql}></span>
                             <span className={styles.mongodb}></span>
+                            <span className={styles.sequalize}></span>
                         </div>
                     </div>
                 </div>

@@ -9,7 +9,7 @@
   width: 100vw;
   height: 100vh;
   background-position: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: multiply;
   backdrop-filter: blur(75px) saturate(180%);
 }
@@ -21,11 +21,29 @@
 }
 
 .subcontenedor {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 0fr);
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
+  place-items: center;
+  gap: 10em;
 }
 
+.titulo {
+  font-family: Poppins;
+  font-weight: 500;
+  color: white;
+  text-align: left;
+  font-size: 5em;
+}
+
+.subtitulo {
+  font-family: Poppins;
+  font-weight: 300;
+  color: white;
+  text-align: left;
+  font-size: 2em;
+}
 
 @keyframes float {
   0% {
@@ -51,14 +69,16 @@
 
 
 
-.titulo {
+
+
+.nombre {
   font-family: Poppins;
   font-weight: 500;
   color: white;
   text-align: center;
 }
 
-.texto {
+.parrafo {
   font-family: Poppins;
   font-weight: 400;
   color: white;
@@ -66,23 +86,18 @@
 }
 
 .imagen {
-  width: 150px;
-  height: 150px;
+  width: 30em;
+  height: 30em;
   border-radius: 50%;
 }
 
-.card {
-  backdrop-filter: blur(8px) saturate(100%);
-  border-radius: 5%;
-  border: 1px solid rgba(242, 242, 242, 0.4);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 3em 1.4em 3em 1.4em;
-  gap: 1.5em;
-  z-index: 3;
+.prueba {
+  font-family: Poppins;
+  font-weight: 400;
+  color: black;
+  text-align: center;
 }
+
 
 @media screen and (max-width: 1200px) {
 
@@ -91,28 +106,47 @@
   }
 
   .contenedor {
-    background-image: url('../../public/backgroundwallpaper.webp');
+    background-image: url('https://images.unsplash.com/photo-1576836165612-8bc9b07e7778?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80');
     width: 100%;
     height: 100%;
+    background-color: transparent;
   }
 
-  .card {
-    position: relative;
-    height: inherit -10em;
-    width: inherit - 5em;
-  }
 
   .subcontenedor {
-    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(3px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0em;
     height: 100vh;
     width: 100vw;
   }
 
   .imagen {
-    position: inherit;
-    height: relative;
-    width: relative;
+    width: 20em;
+    height: 20em;
   }
+
+  .titulo {
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .subtitulo {
+    font-size: 1.3em;
+    text-align: center;
+  }
+
+  /* .imagen,
+  .titulo,
+  .subtitulo {
+    opacity: 1;
+  } */
+
+
 
   .box,
   .box1 {

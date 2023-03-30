@@ -25,53 +25,34 @@ const Profile = () => {
         <div className={styles.contenedor}>
 
           <div className={styles.subcontenedor}>
-            <div className={styles.card}>
+
+
+
+            <div>
+
+              <h1 className={styles.titulo} >Programador <br />{`{ Full Stack }`}</h1>
+              <p className={styles.subtitulo}>Tecnologias de vanguardia</p>
+            </div>
+
+
+
+
+            <>
               <Image
                 src="/profile.webp"
-                width={640}
-                height={677}
+                width={500}
+                height={500}
                 alt="Emmanuel Villavicencio"
                 className={styles.imagen}
                 priority
+              />
+            </>
 
-              ></Image>
-              <h1 className={styles.titulo} >Emmanuel <br /> Villavicencio</h1>
-              <p className={styles.texto}>Programador Full Stack <br />
-                | Next | React | Redux | CSS | HTML | </p>
-            </div>
+
+
+
+
           </div>
-
-          <Image
-            src="/Graphic-Decentralized-Box-p-800.webp"
-            width={800}
-            height={509}
-            alt="Prueba"
-            className={styles.box}
-            priority
-          ></Image>
-
-          <Image
-            src="/Graphic-Decentralized-Base-p-800.webp"
-            width={800}
-            height={509}
-            alt="Prueba"
-            className={styles.box1}
-            priority
-
-          ></Image>
-
-          <Image
-            src="/Graphic-Decentralized-Orbitals-p-800.webp"
-            width={800}
-            height={509}
-            alt="Prueba"
-            className={styles.box1}
-            priority
-
-          ></Image>
-
-
-
         </div>
 
       </section>
