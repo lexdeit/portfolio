@@ -3,7 +3,6 @@
   gap: 5em;
   align-items: center;
   justify-content: center;
-  /* background-image: url('../../public/backgroundwallpaper.webp'); */
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
@@ -12,12 +11,6 @@
   background-color: rgba(0, 0, 0, 0.4);
   background-blend-mode: multiply;
   backdrop-filter: blur(75px) saturate(180%);
-}
-
-.box,
-.box1 {
-  position: absolute;
-  animation: float 3s ease-in-out infinite;
 }
 
 .subcontenedor {
@@ -35,6 +28,8 @@
   color: white;
   text-align: left;
   font-size: 5em;
+  animation: slideTop 1.5s ease forwards;
+
 }
 
 .subtitulo {
@@ -43,21 +38,11 @@
   color: white;
   text-align: left;
   font-size: 2em;
+  animation: slideTop 2s ease forwards;
+
 }
 
-@keyframes float {
-  0% {
-    transform: translate(0, 0);
-  }
 
-  50% {
-    transform: translate(0, 50px);
-  }
-
-  100% {
-    transform: translate(0, 0);
-  }
-}
 
 .iframer {
   position: fixed;
@@ -67,35 +52,11 @@
   z-index: -10;
 }
 
-
-
-
-
-.nombre {
-  font-family: Poppins;
-  font-weight: 500;
-  color: white;
-  text-align: center;
-}
-
-.parrafo {
-  font-family: Poppins;
-  font-weight: 400;
-  color: white;
-  text-align: center;
-}
-
 .imagen {
   width: 30em;
   height: 30em;
   border-radius: 50%;
-}
-
-.prueba {
-  font-family: Poppins;
-  font-weight: 400;
-  color: black;
-  text-align: center;
+  animation: slideLeft 1s ease forwards;
 }
 
 
@@ -140,16 +101,31 @@
     text-align: center;
   }
 
-  /* .imagen,
-  .titulo,
-  .subtitulo {
+}
+
+/* KEYFRAMES ANIMATIONS */
+
+@keyframes slideTop {
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  100% {
     opacity: 1;
-  } */
+    transform: translateY(0);
+  }
+}
 
+@keyframes slideLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
 
+  100% {
+    opacity: 1;
+    transform: translateX(0);
 
-  .box,
-  .box1 {
-    display: none;
   }
 }

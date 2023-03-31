@@ -16,6 +16,7 @@
     text-align: center;
     background-color: #ffffff;
     color: black;
+
 }
 
 .nav {
@@ -29,15 +30,17 @@
     z-index: 100;
     padding: .3em 5em .3em 5em;
     border-bottom: 1px solid #ffffff35;
+
 }
 
 .menuletras {
     font-family: Poppins;
     font-size: 1em;
     text-align: center;
-    color: #ffffff;
+    color: white;
     font-weight: 400;
     transition: all .5s;
+
 }
 
 .menuletras:hover {
@@ -69,7 +72,7 @@
     box-shadow: 0em 0em .1em .01em rgba(255, 255, 255, 0.5);
     backdrop-filter: blur(15px);
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     align-items: center;
     place-items: center;
@@ -86,6 +89,10 @@
     z-index: 100;
 }
 
+.logo {
+    animation: slideRight 1.5s ease forwards;
+}
+
 /*----------------------------------------------------MobileMenu----------------------------------------------------------*/
 
 @media screen and (max-width: 1200px) {
@@ -94,8 +101,10 @@
         display: none;
     }
 
-    .submenumobile{
+    .submenumobile {
         opacity: 1;
+        animation: slideTop .5s ease forwards;
+
     }
 
     .mobile {
@@ -119,6 +128,8 @@
         padding-right: 2em;
         padding-bottom: .8em;
         padding-left: 2em;
+        animation: slideTop 1.5s ease forwards;
+
     }
 
 
@@ -148,45 +159,84 @@
 /*---------------------------------------------------ANIMACION-----------------------------------------------------------*/
 
 
-@keyframes rotate {
+@keyframes slideLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
     100% {
-        transform: translate(-50%, -50%) rotate(1turn);
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideTop {
+    0% {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
 
 /*--------------------------------------------------------ICONOS---------------------------------------------------------*/
-.homemobile{
+.homemobile {
     background-image: url("data:image/svg+xml,%3Csvg fill='%23ffffff' viewBox='0 0 32 32' version='1.1' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Ctitle%3Ehome%3C/title%3E%3Cpath d='M30.488 13.431l-14-12c-0.13-0.112-0.301-0.18-0.488-0.18s-0.358 0.068-0.489 0.181l0.001-0.001-14 12c-0.161 0.138-0.262 0.342-0.262 0.569v16c0 0.414 0.336 0.75 0.75 0.75h28c0.414-0 0.75-0.336 0.75-0.75v0-16c-0-0.227-0.101-0.431-0.261-0.569l-0.001-0.001zM11.75 29.25v-5.25c0-2.347 1.903-4.25 4.25-4.25s4.25 1.903 4.25 4.25v0 5.25zM29.25 29.25h-7.5v-5.25c0-3.176-2.574-5.75-5.75-5.75s-5.75 2.574-5.75 5.75v0 5.25h-7.5v-14.905l13.25-11.356 13.25 11.356z'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
     width: 2.8em;
     height: 2.8em;
+    animation: slideTop .5s ease forwards;
 }
 
-.aboutmobile{
+.aboutmobile {
     background-image: url("data:image/svg+xml,%3Csvg fill='%23ffffff' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Ctitle%3E%3C/title%3E%3Cg id='about'%3E%3Cpath d='M16,16A7,7,0,1,0,9,9,7,7,0,0,0,16,16ZM16,4a5,5,0,1,1-5,5A5,5,0,0,1,16,4Z'%3E%3C/path%3E%3Cpath d='M17,18H15A11,11,0,0,0,4,29a1,1,0,0,0,1,1H27a1,1,0,0,0,1-1A11,11,0,0,0,17,18ZM6.06,28A9,9,0,0,1,15,20h2a9,9,0,0,1,8.94,8Z'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
     background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
     width: 2.8em;
     height: 2.8em;
+    animation: slideTop .5s ease forwards;
+
 }
 
-.servicesmobile{
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M6.89001 9C7.87001 9.49 8.71001 10.23 9.32001 11.15C9.67001 11.67 9.67001 12.34 9.32001 12.86C8.71001 13.77 7.87001 14.51 6.89001 15' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M13 15H17' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");    background-size: contain;
+.servicesmobile {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M6.89001 9C7.87001 9.49 8.71001 10.23 9.32001 11.15C9.67001 11.67 9.67001 12.34 9.32001 12.86C8.71001 13.77 7.87001 14.51 6.89001 15' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M13 15H17' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    background-size: contain;
     background-repeat: no-repeat;
     display: inline-block;
     width: 2.8em;
     height: 2.8em;
+    animation: slideTop .6s ease forwards;
+
 }
 
-.contactmobile{
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M16 2H8C4 2 2 4 2 8V21C2 21.55 2.45 22 3 22H16C20 22 22 20 22 16V8C22 4 20 2 16 2Z' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M7 9.5H17' stroke='%23ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M7 14.5H14' stroke='%23ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");    background-repeat: no-repeat;
+.contactmobile {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cpath d='M16 2H8C4 2 2 4 2 8V21C2 21.55 2.45 22 3 22H16C20 22 22 20 22 16V8C22 4 20 2 16 2Z' stroke='%23ffffff' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M7 9.5H17' stroke='%23ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3Cpath d='M7 14.5H14' stroke='%23ffffff' stroke-width='1.5' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
     display: inline-block;
     width: 2.8em;
     height: 2.8em;
+    animation: slideTop .6s ease forwards;
+
 }
 
 .github {
@@ -198,6 +248,8 @@
     height: 40px;
     transition: .5s;
     cursor: pointer;
+    animation: slideLeft 1s ease forwards;
+
 }
 
 .github:hover {
@@ -212,6 +264,7 @@
     height: 44px;
     cursor: pointer;
     transition: .5s;
+    animation: slideLeft 1.2s ease forwards;
 
 
 }
@@ -230,6 +283,8 @@
     height: 45px;
     cursor: pointer;
     transition: all .5s;
+    animation: slideLeft 1.5s ease forwards;
+
 }
 
 .linkedin:hover {
