@@ -24,7 +24,6 @@ const About = () => {
                         <p className={styles.informacion}>Algunos paises que eh visitado</p>
                         <div className={styles.paises}>
                             <span className={styles.germany}></span>
-                            <span className={styles.mexico}></span>
                             <span className={styles.canada}></span>
                             <span className={styles.uk}></span>
                             <span className={styles.republica}></span>

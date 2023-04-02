@@ -105,7 +105,7 @@ const Layout = ({ children, title, description }) => {
             <main>{children}</main>
 
             <footer className={styles.footer}>
-                © {now.getFullYear()} All right reserved | Made with ♥ by <a href="https://github.com/lexdeit"> @lexdeit</a> | Made with {"{Next | React}"}
+                © {now.getFullYear()} All right reserved | Made with ❤️ by <a href="https://github.com/lexdeit">@lexdeit</a> | Made with {"{ Next }"}
             </footer>
         </>
     )
