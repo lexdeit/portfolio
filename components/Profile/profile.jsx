@@ -21,13 +21,17 @@ const Profile = () => {
     //Estado inicial
     initial: {
       opacity: 0,
-      y: '-100vh',
+      y: '-50vh',
       borderRadius: '50%',
+      width: '5em',
+      height: '5em',
     },
     //Animacion que va a realizar
     animate: {
       opacity: 1,
       y: 0,
+      width: '20em',
+      height: '20em',
       //Transicion
       transition: {
         type: 'spring'
@@ -50,22 +54,20 @@ const Profile = () => {
 
             <div>
 
-              <h1 className={styles.titulo} >Programador <br />{`{ Full Stack }`}</h1>
-              <p className={styles.subtitulo}>Tecnologias de vanguardia</p>
+              <h1>Programador <br />{`{ Full Stack }`}</h1>
+
+              <motion.p
+                initial={{ opacity: 0, y: '100vh' }}
+                animate={{ opacity: 1, y: 0 }}
+                whileInView={{opacity: 0}}
+              >Tecnologias de vanguardia</motion.p>
+
             </div>
 
 
 
 
             <>
-              {/* <Image
-                src="/profile.webp"
-                width={500}
-                height={500}
-                alt="Emmanuel Villavicencio"
-                className={styles.imagen}
-                priority
-              /> */}
 
               <motion.img
                 src='./profile.webp'
@@ -73,6 +75,7 @@ const Profile = () => {
                 initial='initial'
                 animate='animate'
                 transition='transition'
+                alt="Emmanuel Villavicencio"
                 priority
               />
 

@@ -33,7 +33,8 @@ const About = () => {
             opacity: 1,
             y: 0,
             transition: {
-                type: 'spring'
+                type: 'spring',
+                duration: 5
             }
         }
     }
@@ -48,25 +49,39 @@ const About = () => {
                     <div className={styles.about}>
                         <br />
                         <br />
-                        <h1 className={styles.titulo}>Acerca de mi</h1>
+
+                        <motion.h1
+                            initial={{ opacity: 0, x: -100 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            className={styles.titulo}
+
+                        >Quien soy?</motion.h1>
+
                         <br />
-                        <p className={styles.informacion}>
+
+                        <motion.p
+                            initial={{ opacity: 0, x: -100 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            className={styles.informacion}>
+
                             Soy un estudiante de ingeniería en Desarrollo de Software y Redes
                             especializado en desarrollo Full-Stack, con experiencia en tecnologías como
                             React, Redux, Next, Node, Express. <br /> <br />
                             Además, cuento con un certificado nivel B2.1 que obtuve en EF en mi tiempo en Toronto, Canadá,
                             sin embargo en mi ultimo examen obtuve un C1 Avanzado.
                             También he obtenido un certificado de principiante en alemán después de un curso intensivo en Berlín.
-                        </p>
+                        </motion.p>
+
                         <br />
-                        <p className={styles.informacion}>Algunos paises que eh visitado</p>
+                        <p className={styles.informacion}>Mi pasion me a llevado a</p>
                         <div className={styles.paises}>
                             {countryIcons.map(icono => {
                                 return (
                                     <motion.span
                                         variants={iconCountryVariants}
                                         initial='initial'
-                                        animate='animate'
+                                        // animate='animate'
+                                        whileInView={{ y: 0, opacity: 1 }}
                                         className={icono}
                                     />
                                 )
@@ -93,12 +108,9 @@ const About = () => {
                                 return (
                                     <motion.span
                                         variants={iconTechVariants}
-                                        // initial='initial'
-                                        animate='animate'
+                                        initial='initial'
                                         className={icono}
-                                        drag
-                                        dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
-                                        dragElastic={0.1}
+                                        whileInView={{ y: 0, opacity: 1 }}
                                     />
                                 )
                             })}

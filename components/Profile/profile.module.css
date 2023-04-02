@@ -22,28 +22,6 @@
   gap: 10em;
 }
 
-.titulo {
-  font-family: Poppins;
-  font-weight: 500;
-  color: white;
-  text-align: left;
-  font-size: 5em;
-  animation: slideTop 1.5s ease forwards;
-
-}
-
-.subtitulo {
-  font-family: Poppins;
-  font-weight: 300;
-  color: white;
-  text-align: left;
-  font-size: 2em;
-  animation: slideTop 2s ease forwards;
-
-}
-
-
-
 .iframer {
   position: fixed;
   width: 100%;
@@ -89,16 +67,6 @@
   .imagen {
     width: 20em;
     height: 20em;
-  }
-
-  .titulo {
-    font-size: 3em;
-    text-align: center;
-  }
-
-  .subtitulo {
-    font-size: 1.3em;
-    text-align: center;
   }
 
 }

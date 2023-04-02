@@ -1,5 +1,6 @@
 import styles from "../services/services.module.css";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Services = () => {
     return (
@@ -14,7 +15,11 @@ const Services = () => {
                     <div className={styles.contenedor}>
 
                         <div className={styles.card}>
-                            <div className={styles.subcontenedor}>
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 100 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                className={styles.subcontenedor}>
                                 <Image
                                     src={"/responsive.webp"}
                                     width={166}
@@ -28,12 +33,17 @@ const Services = () => {
                                     Su sitio se mostrará correctamente en cualquier dispositivo,
                                     incluidas computadoras de escritorio, tabletas y teléfonos móviles.
                                 </p>
-                            </div>
+                            </motion.div>
+
                         </div>
 
 
                         <div className={styles.card}>
-                            <div className={styles.subcontenedor}>
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 100 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                className={styles.subcontenedor}>
 
                                 <Image
                                     src={"/rocket.webp"}
@@ -49,12 +59,16 @@ const Services = () => {
                                     Esencial para retener a tus usuarios y el éxito de tu sitio web.
                                     Lo que lleva a una mayor satisfacción del cliente y un mejor desempeño de tu negocio en línea.
                                 </p>
-                            </div>
+                            </motion.div>
                         </div>
 
 
                         <div className={styles.card}>
-                            <div className={styles.subcontenedor}>
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 100 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                className={styles.subcontenedor}>
 
                                 <Image
                                     src={"/virtualworld.webp"}
@@ -71,12 +85,16 @@ const Services = () => {
                                     Utilizo las últimas tecnologías en diseño web
                                     para asegurarme de que tu sitio esté a la altura de las mejores compañías del mundo!
                                 </p>
-                            </div>
+                            </motion.div>
                         </div>
 
 
                         <div className={styles.card}>
-                            <div className={styles.subcontenedor}>
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 100 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                className={styles.subcontenedor}>
                                 <Image
                                     src={"/socialmedia.webp"}
                                     width={340}
@@ -90,12 +108,16 @@ const Services = () => {
                                 <p className={styles.parrafo}>
                                     Hay muchas plataformas sociales por ahí, y usted debe promover su presencia en ellas en su sitio web.
                                 </p>
-                            </div>
+                            </motion.div>
                         </div>
 
 
                         <div className={styles.card}>
-                            <div className={styles.subcontenedor}>
+
+                            <motion.div
+                                initial={{ opacity: 0, y: 100 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                className={styles.subcontenedor}>
                                 <Image
                                     src={"/creativedesign.webp"}
                                     width={225}
@@ -110,12 +132,15 @@ const Services = () => {
                                     Un buen y atractivo diseño web te ayuda a mantener tus leads en tu sitio,
                                     que es la cara digital de tu negocio.
                                 </p>
-                            </div>
+                            </motion.div>
                         </div>
 
 
                         <div className={styles.card}>
-                            <div className={styles.subcontenedor}>
+                            <motion.div
+                                initial={{ opacity: 0, y: 100 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                className={styles.subcontenedor}>
                                 <Image
                                     src={"/seo.webp"}
                                     width={225}
@@ -131,7 +156,7 @@ const Services = () => {
                                     Optimizaré su sitio con una estrategia inteligente de optimización de motores de
                                     búsqueda para generar clientes potenciales.
                                 </p>
-                            </div>
+                            </motion.div>
                         </div>
                     </div>
                 </div>
