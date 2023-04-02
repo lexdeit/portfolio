@@ -1,6 +1,44 @@
-import styles from "../about/about.module.css"
+import styles from "../about/about.module.css";
+import { motion } from 'framer-motion';
 
 const About = () => {
+
+    const techIcons = [styles.javascript, styles.html, styles.css, styles.git, styles.react, styles.redux, styles.nextjs, styles.nodejs, styles.express, styles.mysql, styles.mongodb, styles.sequalize];
+
+    const iconTechVariants = {
+
+        initial: {
+            opacity: 0,
+            y: '-5vh',
+        },
+
+        animate: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                type: 'spring'
+            }
+        }
+    }
+
+    const countryIcons = [styles.germany, styles.canada, styles.uk, styles.republica, styles.uae, styles.france, styles.italy];
+
+    const iconCountryVariants = {
+        initial: {
+            opacity: 0,
+            y: '-5vh',
+        },
+
+        animate: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                type: 'spring'
+            }
+        }
+    }
+
+
     return (
         <>
             <section id="about">
@@ -23,13 +61,16 @@ const About = () => {
                         <br />
                         <p className={styles.informacion}>Algunos paises que eh visitado</p>
                         <div className={styles.paises}>
-                            <span className={styles.germany}></span>
-                            <span className={styles.canada}></span>
-                            <span className={styles.uk}></span>
-                            <span className={styles.republica}></span>
-                            <span className={styles.uae}></span>
-                            <span className={styles.france}></span>
-                            <span className={styles.italy}></span>
+                            {countryIcons.map(icono => {
+                                return (
+                                    <motion.span
+                                        variants={iconCountryVariants}
+                                        initial='initial'
+                                        animate='animate'
+                                        className={icono}
+                                    />
+                                )
+                            })}
                         </div>
                         <br />
                         <p className={styles.informacion}>Si eres un reclutador te dejo mi CV</p>
@@ -45,19 +86,22 @@ const About = () => {
                         <h1 className={styles.titulo}>Tecnologias <br className={styles.espacio} /> {"{LexdeIT Skills}"} </h1>
                         <br />
                         <br />
+
+
                         <div className={styles.iconos}>
-                            <span className={styles.javascript}></span>
-                            <span className={styles.html}></span>
-                            <span className={styles.css}></span>
-                            <span className={styles.git}></span>
-                            <span className={styles.react}></span>
-                            <span className={styles.redux}></span>
-                            <span className={styles.nextjs}></span>
-                            <span className={styles.nodejs}></span>
-                            <span className={styles.express}></span>
-                            <span className={styles.mysql}></span>
-                            <span className={styles.mongodb}></span>
-                            <span className={styles.sequalize}></span>
+                            {techIcons.map(icono => {
+                                return (
+                                    <motion.span
+                                        variants={iconTechVariants}
+                                        // initial='initial'
+                                        animate='animate'
+                                        className={icono}
+                                        drag
+                                        dragConstraints={{ left: 0, top: 0, right: 0, bottom: 0 }}
+                                        dragElastic={0.1}
+                                    />
+                                )
+                            })}
                         </div>
                     </div>
                 </div>

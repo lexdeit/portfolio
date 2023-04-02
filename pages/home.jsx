@@ -5,7 +5,6 @@ import Services from "@/components/services/services";
 const Inicio = () => {
     return (
         <>
-
             <Profile />
             <About />
             <Services />

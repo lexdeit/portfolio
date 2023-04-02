@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { motion } from 'framer-motion';
 import styles from "../Profile/profile.module.css";
 import { useState, useEffect } from "react";
 
@@ -15,6 +16,25 @@ const Profile = () => {
     window.addEventListener('resize', handleResize);
     return () => window.removeEventListener('resize', handleResize);
   }, []);
+
+  const imageVariants = {
+    //Estado inicial
+    initial: {
+      opacity: 0,
+      y: '-100vh',
+      borderRadius: '50%',
+    },
+    //Animacion que va a realizar
+    animate: {
+      opacity: 1,
+      y: 0,
+      //Transicion
+      transition: {
+        type: 'spring'
+      }
+
+    }
+  }
 
 
   return (
@@ -38,14 +58,24 @@ const Profile = () => {
 
 
             <>
-              <Image
+              {/* <Image
                 src="/profile.webp"
                 width={500}
                 height={500}
                 alt="Emmanuel Villavicencio"
                 className={styles.imagen}
                 priority
+              /> */}
+
+              <motion.img
+                src='./profile.webp'
+                variants={imageVariants}
+                initial='initial'
+                animate='animate'
+                transition='transition'
+                priority
               />
+
             </>
 
 
