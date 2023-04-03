@@ -21,7 +21,7 @@ const Profile = () => {
     //Estado inicial
     initial: {
       opacity: 0,
-      y: '-50vh',
+      y: '-500',
       borderRadius: '50%',
       width: '5em',
       height: '5em',
@@ -54,13 +54,15 @@ const Profile = () => {
 
             <div>
 
-              <h1>Programador <br />{`{ Full Stack }`}</h1>
+              <motion.h1
+                initial={{ opacity: 0, y: 100, textAlign: 'left', fontWeight: '500' }}
+                whileInView={{ opacity: 1, y: 0 }}
+              >Programador <br />{`{ Full Stack }`}</motion.h1>
 
-              <motion.p
-                initial={{ opacity: 0, y: '100vh' }}
-                animate={{ opacity: 1, y: 0 }}
-                whileInView={{opacity: 0}}
-              >Tecnologias de vanguardia</motion.p>
+              <motion.h6
+                initial={{ opacity: 0, y: 100, textAlign: 'left' }}
+                whileInView={{ opacity: 1, y: 0 }}
+              >Tecnologias de vanguardia</motion.h6>
 
             </div>
 
