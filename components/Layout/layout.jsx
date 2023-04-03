@@ -2,6 +2,7 @@ import Head from "next/head";
 import styles from "../Layout/layout.module.css";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { useState } from "react";
 
 const Layout = ({ children, title, description }) => {
@@ -46,9 +47,9 @@ const Layout = ({ children, title, description }) => {
                 </div>
 
                 <div className={styles.iconos}>
-                    <span className={styles.github} onClick={() => window.open('https://github.com/lexdeit')}></span>
-                    <span className={styles.instagram} onClick={() => window.open('https://www.instagram.com/lexteckg/')}></span>
-                    <span className={styles.linkedin} onClick={() => window.open('https://www.linkedin.com/in/lexdeit/')}></span>
+                    <span className={styles.github} onClick={() => window.open('https://github.com/lexdeit')}/>
+                    <span className={styles.instagram} onClick={() => window.open('https://www.instagram.com/lexteckg/')}/>
+                    <span className={styles.linkedin} onClick={() => window.open('https://www.linkedin.com/in/lexdeit/')}/>
                 </div>
 
             </nav>
@@ -68,34 +69,33 @@ const Layout = ({ children, title, description }) => {
                 </div>
 
                 <div className={styles.divcentrado} onClick={() => setShowMenu(!showMenu)}>
-                    <span className={styles.burger} ></span>
+                    <span className={styles.burger} />
                 </div>
 
                 <div className={styles.divcentrado}>
-                    <span className={styles.github} onClick={() => window.open('https://github.com/lexdeit')}></span>
+                    <span className={styles.github} onClick={() => window.open('https://github.com/lexdeit')}/>
                 </div>
             </nav>
 
             {/* Menu con iconos Mobile */}
             {showMenu && <div className={styles.submenumobile}>
                 <Link href="#profile">
-                    <span className={styles.homemobile}></span>
-                    <h1 className={styles.menuletras}>Home </h1>
+                    <span className={styles.homemobile}/>
+                    <h1 className={styles.menuletras}>Home</h1>
                 </Link>
 
                 <Link href="#about">
-                    <span className={styles.aboutmobile}></span>
+                    <span className={styles.aboutmobile}/>
                     <h1 className={styles.menuletras}>About</h1>
                 </Link>
 
                 <Link href="#services">
-                    <span className={styles.servicesmobile}></span>
+                    <span className={styles.servicesmobile} />
                     <h1 className={styles.menuletras}>Services</h1>
                 </Link>
 
                 <Link href="#contact" onClick={() => window.open('https://api.whatsapp.com/send?phone=4915776104366&text=%C2%A1Hola,%20Emmanuel!%20%C2%BFC%C3%B3mo%20est%C3%A1s?')}>
-                    <span className={styles.contactmobile}></span>
-
+                    <span className={styles.contactmobile} />
                     <h1 className={styles.menuletras}>Contact</h1>
                 </Link>
 

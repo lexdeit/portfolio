@@ -21,7 +21,7 @@ const Profile = () => {
     //Estado inicial
     initial: {
       opacity: 0,
-      y: '-500',
+      y: '500',
       borderRadius: '50%',
       width: '5em',
       height: '5em',
@@ -34,7 +34,9 @@ const Profile = () => {
       height: '20em',
       //Transicion
       transition: {
-        type: 'spring'
+        type: 'spring',
+        duration: 1.5,
+        delay: 1.3
       }
 
     }
@@ -55,13 +57,15 @@ const Profile = () => {
             <div>
 
               <motion.h1
-                initial={{ opacity: 0, y: 100, textAlign: 'left', fontWeight: '500' }}
-                whileInView={{ opacity: 1, y: 0 }}
-              >Programador <br />{`{ Full Stack }`}</motion.h1>
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+              >Programador <br /> {`{Full Stack}`} </motion.h1>
 
               <motion.h6
-                initial={{ opacity: 0, y: 100, textAlign: 'left' }}
-                whileInView={{ opacity: 1, y: 0 }}
+                initial={{ opacity: 0, y: 100 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.8, delay: 0.7 }}
               >Tecnologias de vanguardia</motion.h6>
 
             </div>

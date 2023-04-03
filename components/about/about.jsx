@@ -50,27 +50,19 @@ const About = () => {
                         <br />
                         <br />
 
-                        <motion.h1
-                            initial={{ opacity: 0, x: -100 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            className={styles.titulo}
-
-                        >Quien soy?</motion.h1>
+                        <h1 style={{ textAlign: 'left' }}>Quien soy?</h1>
 
                         <br />
 
-                        <motion.p
-                            initial={{ opacity: 0, x: -100 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            className={styles.informacion}>
+                        <p className={styles.informacion}>
 
-                            Soy un estudiante de ingeniería en Desarrollo de Software y Redes
+                            Estudiante de ingeniería en Desarrollo de Software y Redes
                             especializado en desarrollo Full-Stack, con experiencia en tecnologías como
                             React, Redux, Next, Node, Express. <br /> <br />
                             Además, cuento con un certificado nivel B2.1 que obtuve en EF en mi tiempo en Toronto, Canadá,
                             sin embargo en mi ultimo examen obtuve un C1 Avanzado.
                             También he obtenido un certificado de principiante en alemán después de un curso intensivo en Berlín.
-                        </motion.p>
+                        </p>
 
                         <br />
                         <p className={styles.informacion}>Mi pasion me a llevado a</p>
