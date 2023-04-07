@@ -44,9 +44,7 @@
   transition: all 0.5s;
   width: 100%;
   max-width: auto;
-  /* Usamos max-width para que la tarjeta no se haga demasiado grande en pantallas grandes */
   max-height: 100%;
-  /* Usamos height: auto para que el alto se adapte al contenido */
   margin: 0;
 }
 

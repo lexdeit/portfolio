@@ -83,7 +83,7 @@ const About = () => {
                         <p className={styles.informacion}>Si eres un reclutador te dejo mi CV</p>
                         <br />
 
-                        <button data-text="Awesome" className={styles.button} onClick={() => window.open('https://bit.ly/3LGBaE3')}>
+                        <button data-text="Awesome" className={styles.button} onClick={() => window.open('bit.ly/3mipxJ6')}>
                             <span className="actual-text">&nbsp;Curriculum&nbsp;</span>
                             <span className={styles.hovertext} aria-hidden="true">&nbsp;Curriculum&nbsp;</span>
                         </button>
@@ -103,6 +103,8 @@ const About = () => {
                                         initial='initial'
                                         className={icono}
                                         whileInView={{ y: 0, opacity: 1 }}
+                                        whileHover={{ y: -10, scale: 1.2 }}
+                                        whileTap={{ rotateZ: 50 }}
                                     />
                                 )
                             })}
