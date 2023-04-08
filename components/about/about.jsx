@@ -4,40 +4,29 @@ import { motion } from 'framer-motion';
 const About = () => {
 
     const techIcons = [styles.javascript, styles.html, styles.css, styles.git, styles.react, styles.redux, styles.nextjs, styles.nodejs, styles.express, styles.mysql, styles.mongodb, styles.sequalize];
-
-    const iconTechVariants = {
-
-        initial: {
-            opacity: 0,
-            y: '-5vh',
-        },
-
-        animate: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                type: 'spring'
-            }
-        }
-    }
-
     const countryIcons = [styles.germany, styles.canada, styles.uk, styles.republica, styles.uae, styles.france, styles.italy];
 
-    const iconCountryVariants = {
-        initial: {
-            opacity: 0,
-            y: '-5vh',
-        },
 
-        animate: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                type: 'spring',
-                duration: 5
+    //Animacion del contenedor padre
+    const containerAnimation = {
+        hidden: { opacity: 1, scale: 0 }, visible: {
+            opacity: 1, scale: 1, transition: {
+                delayChildren: 0,
+                staggerChildren: 0.1
             }
         }
     }
+
+
+    //Animacion individual de cada icono
+    const iconTechVariants = {
+        hidden: { y: 20, opacity: 0, rotateZ: 100 },
+        visible: { y: 0, opacity: 1, rotateZ: 0 },
+    }
+
+
+
+
 
 
     return (
@@ -66,19 +55,25 @@ const About = () => {
 
                         <br />
                         <p className={styles.informacion}>Mi pasion me a llevado a</p>
-                        <div className={styles.paises}>
+
+                        <motion.div
+                            variants={containerAnimation}
+                            initial="hidden"
+                            whileInView="visible"
+                            className={styles.paises}>
+
                             {countryIcons.map(icono => {
                                 return (
                                     <motion.span
-                                        variants={iconCountryVariants}
-                                        initial='initial'
-                                        // animate='animate'
-                                        whileInView={{ y: 0, opacity: 1 }}
+                                        variants={iconTechVariants}
                                         className={icono}
                                     />
                                 )
                             })}
-                        </div>
+
+                        </motion.div>
+
+
                         <br />
                         <p className={styles.informacion}>Si eres un reclutador te dejo mi CV</p>
                         <br />
@@ -88,28 +83,35 @@ const About = () => {
                             <span className={styles.hovertext} aria-hidden="true">&nbsp;Curriculum&nbsp;</span>
                         </button>
 
+
                     </div>
+
+
                     <div className={styles.subcontendero}>
                         <h1 className={styles.titulo}>Tecnologias <br className={styles.espacio} /> {"{LexdeIT Skills}"} </h1>
                         <br />
                         <br />
 
 
-                        <div className={styles.iconos}>
+                        <motion.div
+                            variants={containerAnimation}
+                            initial="hidden"
+                            whileInView="visible"
+                            className={styles.iconos}>
+
                             {techIcons.map(icono => {
                                 return (
                                     <motion.span
                                         variants={iconTechVariants}
-                                        initial='initial'
                                         className={icono}
-                                        whileInView={{ y: 0, opacity: 1 }}
-                                        whileHover={{ y: -10, scale: 1.2 }}
-                                        whileTap={{ rotateZ: 50 }}
                                     />
                                 )
                             })}
-                        </div>
+
+                        </motion.div>
                     </div>
+
+
                 </div>
             </section>
         </>
