@@ -1,5 +1,5 @@
 .contenedor {
-    background-color: #080411;
+    background-color: rgba(8, 4, 17, 1);
     font-family: Poppins;
     display: grid;
     grid-template-columns: 1fr 1fr;
