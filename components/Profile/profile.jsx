@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
 import styles from "../Profile/profile.module.css";
 import { useState, useEffect } from "react";
-
-
+import Spline from '@splinetool/react-spline';
 
 const Profile = () => {
   const [isScreenBig, setIsScreenBig] = useState(false);
@@ -63,12 +62,16 @@ const Profile = () => {
                 transition={{ duration: 0.5, delay: 0.5 }}
               >Programador <br /> {`{Full Stack}`} </motion.h1>
 
-              <motion.h6
-                initial={{ opacity: 0, y: 100,  }}
+              <motion.h5
+                initial={{ opacity: 0, y: 100, }}
                 whileInView={{ opacity: 1, y: 0 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8, delay: 0.7 }}
-              >Tecnologias de vanguardia</motion.h6>
+              >
+
+                Tecnologias de vanguardia
+
+              </motion.h5>
 
             </div>
 
@@ -83,6 +86,7 @@ const Profile = () => {
                 priority
               />
 
+              {/* <Spline scene="https://prod.spline.design/g9q8B7AyJ3VvEy1a/scene.splinecode" /> */}
 
             </>
 

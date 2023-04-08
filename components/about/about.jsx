@@ -1,5 +1,7 @@
 import styles from "../about/about.module.css";
 import { motion } from 'framer-motion';
+import TypewriterComponent from 'typewriter-effect';
+
 
 const About = () => {
 
@@ -40,7 +42,24 @@ const About = () => {
                         <br />
 
                         <h1 style={{ textAlign: 'left' }}>Quien soy?</h1>
+                        <h4 style={{ textAlign: "left" }}>
+                            <TypewriterComponent
+                                options={{
+                                    autoStart: true,
+                                    loop: true,
+                                    delay: 50,
+                                    deleteSpeed: 50,
+                                    strings: [
+                                        "Ingeniero en Software",
+                                        "Full Stack Developer",
+                                        "Diseñador Web",
+                                        "Amante de la tecnología"
+                                    ],
+                                }}
 
+                            />
+
+                        </h4>
                         <br />
 
                         <p className={styles.informacion}>

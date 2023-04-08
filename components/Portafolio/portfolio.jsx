@@ -1,7 +1,5 @@
 import { motion } from "framer-motion";
 import styles from './portfolio.module.css';
-import { useState } from "react";
-
 
 const tituloAnimation = {
     initial: {
@@ -17,12 +15,7 @@ const tituloAnimation = {
 }
 
 
-
-
 const Portfolio = () => {
-
-
-
     return (
         <>
             <section>
@@ -47,6 +40,7 @@ const Portfolio = () => {
                     <div className={styles.cajon}>
 
                     </div>
+
                 </div>
             </section>
         </>
