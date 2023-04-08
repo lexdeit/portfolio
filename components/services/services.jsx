@@ -2,6 +2,7 @@ import styles from "../services/services.module.css";
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+
 const Services = () => {
     return (
         <>

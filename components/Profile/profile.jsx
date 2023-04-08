@@ -1,7 +1,8 @@
-import Image from "next/image";
 import { motion } from 'framer-motion';
 import styles from "../Profile/profile.module.css";
 import { useState, useEffect } from "react";
+import Spline from "@splinetool/react-spline";
+
 
 
 const Profile = () => {
@@ -17,30 +18,6 @@ const Profile = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const imageVariants = {
-    //Estado inicial
-    initial: {
-      opacity: 0,
-      y: '500',
-      borderRadius: '50%',
-      width: '5em',
-      height: '5em',
-    },
-    //Animacion que va a realizar
-    animate: {
-      opacity: 1,
-      y: 0,
-      width: '20em',
-      height: '20em',
-      //Transicion
-      transition: {
-        type: 'spring',
-        duration: 1.5,
-        delay: 1.3
-      }
-
-    }
-  }
 
 
   return (
@@ -74,16 +51,9 @@ const Profile = () => {
 
 
             <>
+              <Spline scene="https://prod.spline.design/g9q8B7AyJ3VvEy1a/scene.splinecode" />
 
-              <motion.img
-                src='./profile.webp'
-                variants={imageVariants}
-                initial='initial'
-                animate='animate'
-                transition='transition'
-                alt="Emmanuel Villavicencio"
-                priority
-              />
+
 
             </>
 
