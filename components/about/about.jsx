@@ -42,7 +42,7 @@ const About = () => {
                         <br />
 
                         <h1 style={{ textAlign: 'left' }}>Quien soy?</h1>
-                        <h4 style={{ textAlign: "left" }}>
+                        <h5 style={{ textAlign: "left" }}>
                             <TypewriterComponent
                                 options={{
                                     autoStart: true,
@@ -50,16 +50,17 @@ const About = () => {
                                     delay: 50,
                                     deleteSpeed: 50,
                                     strings: [
-                                        "Ingeniero en Software",
+                                        "Estudiante de Software",
                                         "Full Stack Developer",
                                         "Diseñador Web",
-                                        "Amante de la tecnología"
+                                        "Back-End Developer",
+                                        "Front-End Developer"
                                     ],
                                 }}
 
                             />
 
-                        </h4>
+                        </h5>
                         <br />
 
                         <p className={styles.informacion}>
@@ -97,7 +98,7 @@ const About = () => {
                         <p className={styles.informacion}>Si eres un reclutador te dejo mi CV</p>
                         <br />
 
-                        <button data-text="Awesome" className={styles.button} onClick={() => window.open('bit.ly/3mipxJ6')}>
+                        <button data-text="Awesome" className={styles.button} onClick={() => window.open('https://bit.ly/3mipxJ6')}>
                             <span className="actual-text">&nbsp;Curriculum&nbsp;</span>
                             <span className={styles.hovertext} aria-hidden="true">&nbsp;Curriculum&nbsp;</span>
                         </button>
@@ -110,7 +111,7 @@ const About = () => {
                         <h1 className={styles.titulo}>Tecnologias <br className={styles.espacio} /> {"{LexdeIT Skills}"} </h1>
                         <br />
                         <br />
-                   
+
 
                         <motion.div
                             variants={containerAnimation}

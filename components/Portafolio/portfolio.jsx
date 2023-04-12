@@ -34,7 +34,7 @@ const iconTechVariants = {
 const Portfolio = () => {
     return (
         <>
-            <section className={styles.fondo}>
+            <section className={styles.fondo} id="portfolio">
                 <motion.h1
                     variants={tituloAnimation}
                     initial='initial'
@@ -42,142 +42,142 @@ const Portfolio = () => {
                     whileInView='animate'
                 >Proyectos</motion.h1>
 
-<motion.img
-                        src='./loveglow.webp'
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{
-                            repeatType: "mirror",
-                            duration: 6,
-                            repeat: Infinity,
-                        }}
-                        alt="Emmanuel Villavicencio"
-                        className={styles.imagen}
-                        priority
-                    />
+                <motion.img
+                    src='./loveglow.webp'
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                        repeatType: "mirror",
+                        duration: 6,
+                        repeat: Infinity,
+                    }}
+                    alt="Emmanuel Villavicencio"
+                    className={styles.imagen}
+                    priority
+                />
 
-                    <motion.img
-                        src='./shadowlove.webp'
-                        initial={{ opacity: 0.5, y: 50 }}
-                        animate={{ opacity: 0.8 }}
-                        transition={{
-                            repeatType: "mirror",
-                            duration: 6,
-                            repeat: Infinity
-                        }}
-                        alt="Emmanuel Villavicencio"
-                        className={styles.imagen}
-                        priority
-                    />
+                <motion.img
+                    src='./shadowlove.webp'
+                    initial={{ opacity: 0.5, y: 50 }}
+                    animate={{ opacity: 0.8 }}
+                    transition={{
+                        repeatType: "mirror",
+                        duration: 6,
+                        repeat: Infinity
+                    }}
+                    alt="Emmanuel Villavicencio"
+                    className={styles.imagen}
+                    priority
+                />
 
-                    <motion.img
-                        src='./loveemoji.webp'
-                        initial={{ y: 30, rotateZ: -45 }}
-                        animate={{ y: 0, type: 'ease', rotateZ: 45 }}
-                        transition={{
-                            repeatType: "mirror",
-                            duration: 6,
-                            repeat: Infinity
-                        }}
-                        drag
-                        dragConstraints={{ left: 0, right: 0, bottom: 0, top: 0 }}
-                        dragElastic={0.04}
-                        className={styles.imagen}
-                        alt="Emmanuel Villavicencio"
-                        priority
-                    />
+                <motion.img
+                    src='./loveemoji.webp'
+                    initial={{ y: 30, rotateZ: -45 }}
+                    animate={{ y: 0, type: 'ease', rotateZ: 45 }}
+                    transition={{
+                        repeatType: "mirror",
+                        duration: 6,
+                        repeat: Infinity
+                    }}
+                    drag
+                    dragConstraints={{ left: 0, right: 0, bottom: 0, top: 0 }}
+                    dragElastic={0.04}
+                    className={styles.imagen}
+                    alt="Emmanuel Villavicencio"
+                    priority
+                />
 
-                    {/* Like emoji */}
-                    <motion.img
-                        src='./glowemoji.webp'
-                        initial={{ opacity: 0 }}
-                        animate={{ opacity: 1 }}
-                        transition={{
-                            repeatType: "mirror",
-                            duration: 3,
-                            repeat: Infinity
-                        }}
-                        alt="Emmanuel Villavicencio"
-                        className={styles.like}
-                        priority
-                    />
+                {/* Like emoji */}
+                <motion.img
+                    src='./glowemoji.webp'
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    transition={{
+                        repeatType: "mirror",
+                        duration: 3,
+                        repeat: Infinity
+                    }}
+                    alt="Emmanuel Villavicencio"
+                    className={styles.like}
+                    priority
+                />
 
-                    <motion.img
-                        src='./shadowlike.webp'
-                        initial={{ opacity: 0.5, y: 50 }}
-                        animate={{ opacity: 0.8 }}
-                        transition={{
-                            repeatType: "mirror",
-                            duration: 3,
-                            repeat: Infinity
-                        }}
-                        alt="Emmanuel Villavicencio"
-                        className={styles.like}
-                        priority
-                    />
+                <motion.img
+                    src='./shadowlike.webp'
+                    initial={{ opacity: 0.5, y: 50 }}
+                    animate={{ opacity: 0.8 }}
+                    transition={{
+                        repeatType: "mirror",
+                        duration: 3,
+                        repeat: Infinity
+                    }}
+                    alt="Emmanuel Villavicencio"
+                    className={styles.like}
+                    priority
+                />
 
-                    <motion.img
-                        src='./likeemoji.webp'
-                        initial={{ y: 30, rotateZ: 90 }}
-                        animate={{ y: 0, type: 'ease', rotateZ: -90 }}
-                        transition={{
-                            repeatType: "mirror",
-                            duration: 8,
-                            repeat: Infinity
-                        }}
-                        drag
-                        dragConstraints={{ left: 0, right: 0, bottom: 0, top: 0 }}
-                        dragElastic={0.04}
-                        className={styles.like}
-                        alt="Emmanuel Villavicencio"
-                        priority
-                    />
+                <motion.img
+                    src='./likeemoji.webp'
+                    initial={{ y: 30, rotateZ: 90 }}
+                    animate={{ y: 0, type: 'ease', rotateZ: -90 }}
+                    transition={{
+                        repeatType: "mirror",
+                        duration: 8,
+                        repeat: Infinity
+                    }}
+                    drag
+                    dragConstraints={{ left: 0, right: 0, bottom: 0, top: 0 }}
+                    dragElastic={0.04}
+                    className={styles.like}
+                    alt="Emmanuel Villavicencio"
+                    priority
+                />
 
-                    {/* wow emoji */}
-                    <motion.img
-                        src='./wowglow.webp'
-                        initial={{ opacity: 0, scale: 1 }}
-                        animate={{ opacity: 1, scale: 1.3 }}
-                        transition={{
-                            repeatType: "mirror",
-                            duration: 5,
-                            repeat: Infinity
-                        }}
-                        alt="Emmanuel Villavicencio"
-                        className={styles.wow}
-                        priority
-                    />
+                {/* wow emoji */}
+                <motion.img
+                    src='./wowglow.webp'
+                    initial={{ opacity: 0, scale: 1 }}
+                    animate={{ opacity: 1, scale: 1.3 }}
+                    transition={{
+                        repeatType: "mirror",
+                        duration: 5,
+                        repeat: Infinity
+                    }}
+                    alt="Emmanuel Villavicencio"
+                    className={styles.wow}
+                    priority
+                />
 
-                    <motion.img
-                        src='./shadowwow.webp'
-                        initial={{ opacity: 0, y: 50, scale: 1 }}
-                        animate={{ opacity: 1, scale: 1.3 }}
-                        transition={{
-                            repeatType: "mirror",
-                            duration: 5,
-                            repeat: Infinity
-                        }}
-                        alt="Emmanuel Villavicencio"
-                        className={styles.wow}
-                        priority
-                    />
+                <motion.img
+                    src='./shadowwow.webp'
+                    initial={{ opacity: 0, y: 50, scale: 1 }}
+                    animate={{ opacity: 1, scale: 1.3 }}
+                    transition={{
+                        repeatType: "mirror",
+                        duration: 5,
+                        repeat: Infinity
+                    }}
+                    alt="Emmanuel Villavicencio"
+                    className={styles.wow}
+                    priority
+                />
 
-                    <motion.img
-                        src='./wowemoji.webp'
-                        initial={{ y: 40, }}
-                        animate={{ y: 0, type: 'ease' }}
-                        transition={{
-                            repeatType: "mirror",
-                            duration: 5,
-                            repeat: Infinity
-                        }}
-                        drag
-                        dragConstraints={{ left: 0, right: 0, bottom: 0, top: 0 }}
-                        dragElastic={0.04}
-                        className={styles.wow}
-                        alt="Emmanuel Villavicencio"
-                        priority
-                    />
+                <motion.img
+                    src='./wowemoji.webp'
+                    initial={{ y: 40, }}
+                    animate={{ y: 0, type: 'ease' }}
+                    transition={{
+                        repeatType: "mirror",
+                        duration: 5,
+                        repeat: Infinity
+                    }}
+                    drag
+                    dragConstraints={{ left: 0, right: 0, bottom: 0, top: 0 }}
+                    dragElastic={0.04}
+                    className={styles.wow}
+                    alt="Emmanuel Villavicencio"
+                    priority
+                />
 
                 <motion.div
                     variants={containerAnimation}

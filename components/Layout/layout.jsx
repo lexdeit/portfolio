@@ -41,15 +41,15 @@ const Layout = ({ children, title, description }) => {
                         <h1 className={styles.menuletras}>Services</h1>
                     </Link>
 
-                    <Link href="#contact">
-                        <h1 className={styles.menuletras}>Contact</h1>
+                    <Link href="#portfolio">
+                        <h1 className={styles.menuletras}>Portfolio</h1>
                     </Link>
                 </div>
 
                 <div className={styles.iconos}>
-                    <span className={styles.github} onClick={() => window.open('https://github.com/lexdeit')}/>
-                    <span className={styles.instagram} onClick={() => window.open('https://www.instagram.com/lexteckg/')}/>
-                    <span className={styles.linkedin} onClick={() => window.open('https://www.linkedin.com/in/lexdeit/')}/>
+                    <span className={styles.github} onClick={() => window.open('https://github.com/lexdeit')} />
+                    <span className={styles.instagram} onClick={() => window.open('https://www.instagram.com/lexteckg/')} />
+                    <span className={styles.linkedin} onClick={() => window.open('https://www.linkedin.com/in/lexdeit/')} />
                 </div>
 
             </nav>
@@ -73,19 +73,19 @@ const Layout = ({ children, title, description }) => {
                 </div>
 
                 <div className={styles.divcentrado}>
-                    <span className={styles.github} onClick={() => window.open('https://github.com/lexdeit')}/>
+                    <span className={styles.github} onClick={() => window.open('https://github.com/lexdeit')} />
                 </div>
             </nav>
 
             {/* Menu con iconos Mobile */}
             {showMenu && <div className={styles.submenumobile}>
                 <Link href="#profile">
-                    <span className={styles.homemobile}/>
+                    <span className={styles.homemobile} />
                     <h1 className={styles.menuletras}>Home</h1>
                 </Link>
 
                 <Link href="#about">
-                    <span className={styles.aboutmobile}/>
+                    <span className={styles.aboutmobile} />
                     <h1 className={styles.menuletras}>About</h1>
                 </Link>
 
@@ -93,10 +93,10 @@ const Layout = ({ children, title, description }) => {
                     <span className={styles.servicesmobile} />
                     <h1 className={styles.menuletras}>Services</h1>
                 </Link>
-
-                <Link href="#contact" onClick={() => window.open('https://api.whatsapp.com/send?phone=4915776104366&text=%C2%A1Hola,%20Emmanuel!%20%C2%BFC%C3%B3mo%20est%C3%A1s?')}>
+                {/* onClick={() => window.open('https://api.whatsapp.com/send?phone=4915776104366&text=%C2%A1Hola,%20Emmanuel!%20%C2%BFC%C3%B3mo%20est%C3%A1s?')} */}
+                <Link href="#portfolio">
                     <span className={styles.contactmobile} />
-                    <h1 className={styles.menuletras}>Contact</h1>
+                    <h1 className={styles.menuletras}>Portfolio</h1>
                 </Link>
 
 
@@ -105,7 +105,7 @@ const Layout = ({ children, title, description }) => {
             <main>{children}</main>
 
             <footer className={styles.footer}>
-                © {now.getFullYear()} All right reserved | Made with ❤️ by <a href="https://github.com/lexdeit">@lexdeit</a> | Made with {"{ Next }"}
+                © {now.getFullYear()} All right reserved | Made with ❤️ by LexdeIT | Made with {"{ Next }"}
             </footer>
         </>
     )
