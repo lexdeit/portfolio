@@ -2,9 +2,70 @@
     background-color: #080411;
     height: 100vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .cajon {
-    display: flex;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
 }
 
+.imagen {
+    position: absolute;
+    width: 20em;
+    height: 20em;
+    bottom: -300%;
+}
+
+.like {
+    position: absolute;
+    width: 20em;
+    height: 20em;
+    bottom: -345%;
+    right: 0%;
+}
+
+.wow {
+    position: absolute;
+    width: 20em;
+    height: 20em;
+    bottom: -280%;
+    right: 15%;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.white {
+    background-color: white;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.pink {
+    background-color: pink;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .like,
+    .wow,
+    .imagen {
+        display: none;
+    }
+}

@@ -86,6 +86,8 @@ const Profile = () => {
                 priority
               />
 
+
+
               {/* <Spline scene="https://prod.spline.design/g9q8B7AyJ3VvEy1a/scene.splinecode" /> */}
 
             </>

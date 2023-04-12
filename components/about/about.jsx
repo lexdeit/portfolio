@@ -110,7 +110,7 @@ const About = () => {
                         <h1 className={styles.titulo}>Tecnologias <br className={styles.espacio} /> {"{LexdeIT Skills}"} </h1>
                         <br />
                         <br />
-
+                   
 
                         <motion.div
                             variants={containerAnimation}

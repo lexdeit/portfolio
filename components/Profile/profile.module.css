@@ -33,6 +33,7 @@
 }
 
 .imagen {
+  position: absolute;
   width: 30em;
   height: 30em;
   border-radius: 50%;
