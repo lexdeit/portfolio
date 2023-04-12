@@ -9,35 +9,40 @@ const tituloAnimation = {
         opacity: 1, y: 0
     },
     transition: {
-        delay: 1,
         duration: 2,
     }
+}
+
+
+const containerAnimation = {
+    hidden: { opacity: 1, scale: 0 }, visible: {
+        opacity: 1, scale: 1, transition: {
+            delayChildren: 0,
+            staggerChildren: 0.1
+        }
+    }
+}
+
+
+//Animacion individual de cada icono
+const iconTechVariants = {
+    hidden: { opacity: 0, scale: 0 },
+    visible: { opacity: 1, scale: 1 },
 }
 
 
 const Portfolio = () => {
     return (
         <>
-            <section>
-                <div className={styles.fondo}>
+            <section className={styles.fondo}>
+                <motion.h1
+                    variants={tituloAnimation}
+                    initial='initial'
+                    transition='transition'
+                    whileInView='animate'
+                >Proyectos</motion.h1>
 
-                    <motion.h1
-                        variants={tituloAnimation}
-                        initial='initial'
-                        whileInView='animate'
-                        transition={{ duration: 1, delay: 0 }}
-                        viewport={{ once: true }}
-                    >Proyectos</motion.h1>
-
-                    <motion.h3
-                        variants={tituloAnimation}
-                        initial='initial'
-                        whileInView='animate'
-                        transition={{ duration: 1.5, delay: .5 }}
-                        viewport={{ once: true }}
-                    >by {`{LexdeIT}`}</motion.h3>
-
-                    <motion.img
+<motion.img
                         src='./loveglow.webp'
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -173,22 +178,39 @@ const Portfolio = () => {
                         alt="Emmanuel Villavicencio"
                         priority
                     />
-                    <div className={styles.cajon}>
 
-                        <div className={styles.yellow}><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat consequuntur, voluptate, et perferendis dolor rem aliquid adipisci unde distinctio quos, non minus iure laudantium optio est fugiat obcaecati quis architecto.</p></div>
+                <motion.div
+                    variants={containerAnimation}
+                    initial='hidden'
+                    whileInView='visible'
+                    className={styles.cajon}>
 
-                        <div className={styles.blue}><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Similique deleniti eum culpa est provident, quia eius tempora fugiat dolore. Exercitationem officia, mollitia quam eaque dolores neque iste vero consequatur consectetur!</p></div>
+                    <motion.div
+                        variants={iconTechVariants}
+                    >
+                        <img src="./rickandmorty.webp" alt="" />
+                    </motion.div>
 
-                        <div className={styles.orange}><p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae eaque minima porro debitis perferendis deleniti dolore numquam aliquid, molestias error at dignissimos, consectetur maxime quia quod nesciunt totam odit velit.</p></div>
+                    <motion.div
+                        variants={iconTechVariants}
+                    >
+                        <img src="./gnamx.webp" alt="" />
+                    </motion.div>
 
-                        <div className={styles.white}><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, et! Odit sed, ipsa, dolores ducimus tempore voluptatem quo animi vitae laboriosam corrupti sapiente rerum et velit eveniet consectetur similique praesentium?</p></div>
+                    <motion.div
+                        variants={iconTechVariants}
+                    >
+                        <img src="./pokeapp.webp" alt="" />
+                    </motion.div>
 
-                        <div className={styles.pink}><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis nisi, sed iusto ducimus mollitia blanditiis harum maxime ad dicta fuga, a numquam nulla explicabo qui hic dolore modi, porro quae?</p></div>
-                        
-                        <div className={styles.red}><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci voluptates nisi doloremque culpa, eum vero sequi aspernatur veritatis dolore natus, perferendis possimus distinctio vitae corporis cumque, itaque numquam consectetur quia!</p></div>
-                    </div>
+                    <motion.div
+                        variants={iconTechVariants}
+                    >
+                        <img src="./Card.webp" alt="" />
+                    </motion.div>
 
-                </div>
+                </motion.div>
+
             </section>
         </>
     )
