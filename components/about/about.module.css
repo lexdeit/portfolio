@@ -1,5 +1,6 @@
 .contenedor {
-    background-color: rgba(8, 4, 17, 1);
+    background-image: linear-gradient(rgba(8, 4, 17, 0.8), rgba(14, 8, 26, 0.8), rgba(30, 18, 53, 0.3), rgba(44, 28, 73, 0.2));
+    backdrop-filter: blur(25px);
     font-family: Poppins;
     display: grid;
     grid-template-columns: 1fr 1fr;

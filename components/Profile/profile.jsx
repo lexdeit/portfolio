@@ -1,12 +1,9 @@
-import { motion } from 'framer-motion';
+import { useScroll, useTransform, motion } from 'framer-motion';
+import { useState, useEffect, useRef } from "react";
 import styles from "../Profile/profile.module.css";
-import { useState, useEffect } from "react";
-import Spline from '@splinetool/react-spline';
 
 const Profile = () => {
   const [isScreenBig, setIsScreenBig] = useState(false);
-
-
   const handleResize = () => {
     setIsScreenBig(window.innerWidth >= 1200);
   };
@@ -43,11 +40,25 @@ const Profile = () => {
   }
 
 
+  let ref = useRef(null)
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["start start", "end start"]
+  });
+  let y = useTransform(scrollYProgress, [0, 1], ["0%", "60%"])
+  let opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
+
+
   return (
     <>
-      <section id="profile">
+      <section id="profile" ref={ref}>
 
-        {isScreenBig && <iframe className={styles.iframer} src="https://www.youtube.com/embed/RhlQvbvMg-0?&autoplay=1&loop=1&mute=1&showinfo=0&controls=0" />}
+        {isScreenBig &&
+          <motion.iframe
+            className={styles.iframer}
+            src="https://www.youtube.com/embed/RhlQvbvMg-0?&autoplay=1&loop=1&mute=1&showinfo=0&controls=0"
+            style={{ opacity, y, scale: 1.2 }}
+          />}
         <div className={styles.contenedor}>
 
           <div className={styles.subcontenedor}>

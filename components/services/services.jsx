@@ -4,9 +4,11 @@ import { motion } from "framer-motion";
 
 
 const Services = () => {
+
+
     return (
         <>
-            <section id="services">
+            <section id="services" className={styles.section}>
                 <div className={styles.principal}>
                     <br />
                     <h1 >Servicios</h1>
